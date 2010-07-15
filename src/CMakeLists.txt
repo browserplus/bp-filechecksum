@@ -1,9 +1,9 @@
 #####
-# A CMake build file for the ruby PSTORE corelet which allows you to
-# persistently store lots of data on the client side.
+# A CMake build file for the ruby filechecksum service which 
+# calculates md5 sums for files.
 # 
-# Author: Steve Spencer
-# (c) Yahoo 2007, all rights reserved
+# Author: Gordon Durand
+# (c) Yahoo 2010, all rights reserved
 #####
 
 # looser syntax
