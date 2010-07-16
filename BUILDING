@@ -1,7 +1,7 @@
 XXX: Here's roughly how to get it building today
 
 1. git clone git://github.com/browserplus/bp-filechecksum
-2. cd bp-fileaccess
+2. cd bp-filechecsum
 3. mkdir src/build
 4. cd src/build
 5. cmake ..

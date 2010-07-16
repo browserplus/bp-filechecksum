@@ -6,6 +6,8 @@
 # (c) Yahoo 2010, all rights reserved
 #####
 
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6) 
+
 # looser syntax
 SET(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS 1)
 
