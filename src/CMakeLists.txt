@@ -11,17 +11,17 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 # looser syntax
 SET(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS 1)
 
-SET(coreletName FileChecksum)
+SET(serviceName FileChecksum)
 
 SET(SCRIPT_FILE FileChecksum.rb)
 
 # Name our project
-PROJECT(${coreletName}Ruby)
+PROJECT(${serviceName}Ruby)
 
 # desired output directory
-SET (outputDir "${CMAKE_CURRENT_BINARY_DIR}/${coreletName}")
+SET (outputDir "${CMAKE_CURRENT_BINARY_DIR}/${serviceName}")
 
-# build up the corelet dir
+# build up the service dir
 FILE(MAKE_DIRECTORY ${outputDir})
 
 CONFIGURE_FILE("${CMAKE_CURRENT_SOURCE_DIR}/manifest.json"
@@ -44,4 +44,12 @@ FOREACH(src ${srcs})
   SET(allDeps ${allDeps} ${myDst})
 ENDFOREACH()
 
-ADD_CUSTOM_TARGET(${coreletName} ALL DEPENDS ${allDeps})
+ADD_CUSTOM_TARGET(${serviceName} ALL DEPENDS ${allDeps})
+
+# a custom step to build latest externals
+SET (pathToExtBuildRb "${CMAKE_CURRENT_SOURCE_DIR}/../external/build.rb")
+ADD_CUSTOM_TARGET(
+    BuildExternals ALL
+    COMMAND ruby ${pathToExtBuildRb}
+    COMMENT "Build 3rd party dependencies")
+ADD_DEPENDENCIES( ${serviceName} BuildExternals )
