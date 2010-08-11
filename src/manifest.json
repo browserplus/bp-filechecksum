@@ -1,212 +1,212 @@
 {
-    "arguments":{
-        "ScriptFile":"FileChecksum.rb"
+  "type":"dependent",
+  "arguments":{
+    "ScriptFile":"FileChecksum.rb"
+  },
+  "uses":{
+    "corelet":"RubyInterpreter",
+    "version":"4"
+  },
+  "strings":{
+    "it":{
+      "title":"Strumento firme file",
+      "summary":"Permette di generare firme MD5 per i tuoi file e quindi evita ai siti di caricare contenuti non necessari."
     },
-    "uses":{
-        "version":"4",
-        "corelet":"RubyInterpreter"
+    "es-US":{
+      "title":"Herramienta de huellas digitales de archivos",
+      "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
     },
-    "type":"dependent",
-    "strings":{
-        "it":{
-            "title":"Strumento firme file",
-            "summary":"Permette di generare firme MD5 per i tuoi file e quindi evita ai siti di caricare contenuti non necessari."
-        },
-        "es-US":{
-            "title":"Herramienta de huellas digitales de archivos",
-            "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
-        },
-        "zh-Hant-HK":{
-            "title":"檔案微縮工具。",
-            "summary":"可用來產生所用檔案的 MD5 \"署名檔\"，用以使網站避免上傳不必要的內容。"
-        },
-        "zh-Hant-TW":{
-            "title":"檔案辨識確認工具。",
-            "summary":"可用來產生檔案的 MD5 Checksum 檔案，以避免上傳了不必要的內容。"
-        },
-        "de":{
-            "title":"Dateiidentifizierungswerkzeug",
-            "summary":"Ermöglicht die Generierung von MD5-Signaturen für Ihre Dateien und eliminiert so das redundante Hochladen von Inhalten."
-        },
-        "fr":{
-            "title":"Outil descripteur de fichier (fingerprinting)",
-            "summary":"Génère des \"signatures MD5\" et les associe à vos fichiers, ce qui simplifie l'envoi de ces fichiers vers le serveur (upload)."
-        },
-        "hi":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"fingerprints\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
-        },
-        "da-DK":{
-            "title":"Redskab til filfingeraftryk.",
-            "summary":"Tillader at der genereres „MD5-signaturer“ af dine filer, som gør det muligt for websites at undgå unødvendig uploading af indhold."
-        },
-        "es-CL":{
-            "title":"Herramienta de huellas digitales de archivos",
-            "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
-        },
-        "it-IT":{
-            "title":"Strumento firme file",
-            "summary":"Permette di generare firme MD5 per i tuoi file e quindi evita ai siti di caricare contenuti non necessari."
-        },
-        "es-PE":{
-            "title":"Herramienta de huellas digitales de archivos",
-            "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
-        },
-        "en-GB":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unnecessary uploading of content."
-        },
-        "en-IN":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"fingerprints\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
-        },
-        "id-ID":{
-            "title":"File Fingerprinting tool",
-            "summary":"Memungkinkan dihasilkannya \"tanda tangan\" MD5 untuk file Anda sehingga situs dapat menghindari aktivitas upload konten yang tidak perlu."
-        },
-        "fr-CA":{
-            "title":"Outil descripteur de fichier (fingerprinting)",
-            "summary":"Génère des \"signatures MD5\" et les associe à vos fichiers, ce qui simplifie le téléchargement de vos fichiers vers le serveur."
-        },
-        "es":{
-            "title":"Herramienta de huellas digitales de archivos",
-            "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
-        },
-        "sv":{
-            "title":"Verktyg för filidentifiering.",
-            "summary":"Tillåter att ”MD5-signaturer” skapas av dina filer, vilket gör att webbplatser inte behöver överföra innehåll till din dator i onödan."
-        },
-        "zh":{
-            "title":"文件微缩工具。",
-            "summary":"可用来生成所用文件的 MD5“签名”，以使网站避免上传不必要的内容。"
-        },
-        "es-MX":{
-            "title":"Herramienta de huellas digitales de archivos",
-            "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
-        },
-        "ko":{
-            "title":"파일 지문 도구",
-            "summary":"파일의 MD5 \"서명\"이 생성되도록 하여 사이트에서 불필요한 컨텐트 업로딩을 피할 수 있게 합니다."
-        },
-        "pt":{
-            "title":"Ferramenta de verificação de arquivo.",
-            "summary":"Permite a criação das “assinaturas” MD5 de seus arquivos, fazendo com que os sites evitem fazer upload de conteúdo desnecessário."
-        },
-        "es-CO":{
-            "title":"Herramienta de huellas digitales de archivos",
-            "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
-        },
-        "nb-NO":{
-            "title":"Verktøy for filfingeravtrykk",
-            "summary":"Tillater generering av MD5-”signaturer” av filene dine, slik at nettsteder kan unngå unødvendig opplasting av innhold."
-        },
-        "id":{
-            "title":"File Fingerprinting tool",
-            "summary":"Memungkinkan dihasilkannya \"tanda tangan\" MD5 untuk file Anda sehingga situs dapat menghindari aktivitas upload konten yang tidak perlu."
-        },
-        "en-AU":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"fingerprints\" of your files to be generated, which enables sites to avoid unnecessary uploading of content."
-        },
-        "th-TH":{
-            "title":"เครื่องมือสร้างลายนิ้วมือไฟล์",
-            "summary":"สร้าง \"ลายเซ็น\" MD5 ของไฟล์ของคุณ ซึ่งช่วยไซต์ป้องกันการอัปโหลดเนื้อหาที่ไม่จำเป็น"
-        },
-        "en-US":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
-        },
-        "sv-SE":{
-            "title":"Verktyg för filidentifiering.",
-            "summary":"Tillåter att ”MD5-signaturer” skapas av dina filer, vilket gör att webbplatser inte behöver överföra innehåll till din dator i onödan."
-        },
-        "de-DE":{
-            "title":"Dateiidentifizierungswerkzeug",
-            "summary":"Ermöglicht die Generierung von MD5-Signaturen für Ihre Dateien und eliminiert so das redundante Hochladen von Inhalten."
-        },
-        "en-SG":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
-        },
-        "es-ES":{
-            "title":"Herramienta de huellas digitales de archivos",
-            "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
-        },
-        "fr-FR":{
-            "title":"Outil descripteur de fichier (fingerprinting)",
-            "summary":"Génère des \"signatures MD5\" et les associe à vos fichiers, ce qui simplifie l'envoi de ces fichiers vers le serveur (upload)."
-        },
-        "en-CA":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
-        },
-        "da":{
-            "title":"Redskab til filfingeraftryk.",
-            "summary":"Tillader at der genereres „MD5-signaturer“ af dine filer, som gør det muligt for websites at undgå unødvendig uploading af indhold."
-        },
-        "zh-Hans":{
-            "title":"文件微缩工具。",
-            "summary":"可用来生成所用文件的 MD5“签名”，以使网站避免上传不必要的内容。"
-        },
-        "pt-BR":{
-            "title":"Ferramenta de verificação de arquivo.",
-            "summary":"Permite a criação das “assinaturas” MD5 de seus arquivos, fazendo com que os sites evitem fazer upload de conteúdo desnecessário."
-        },
-        "vi-VN":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Cho phép tạo \"chữ ký\" MD5 của các tập tin, giúp tránh việc trang web phải tải nội dung không cần thiết."
-        },
-        "es-VE":{
-            "title":"Herramienta de huellas digitales de archivos",
-            "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
-        },
-        "vi":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Cho phép tạo \"chữ ký\" MD5 của các tập tin, giúp tránh việc trang web phải tải nội dung không cần thiết."
-        },
-        "zh-Hant":{
-            "title":"檔案辨識確認工具。",
-            "summary":"可用來產生檔案的 MD5 Checksum 檔案，以避免上傳了不必要的內容。"
-        },
-        "en":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
-        },
-        "nb":{
-            "title":"Verktøy for filfingeravtrykk",
-            "summary":"Tillater generering av MD5-”signaturer” av filene dine, slik at nettsteder kan unngå unødvendig opplasting av innhold."
-        },
-        "th":{
-            "title":"เครื่องมือสร้างลายนิ้วมือไฟล์",
-            "summary":"สร้าง \"ลายเซ็น\" MD5 ของไฟล์ของคุณ ซึ่งช่วยไซต์ป้องกันการอัปโหลดเนื้อหาที่ไม่จำเป็น"
-        },
-        "en-NZ":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unnecessary uploading of content."
-        },
-        "ko-KR":{
-            "title":"파일 지문 도구",
-            "summary":"파일의 MD5 \"서명\"이 생성되도록 하여 사이트에서 불필요한 컨텐트 업로딩을 피할 수 있게 합니다."
-        },
-        "zh-Hans-CN":{
-            "title":"文件微缩工具。",
-            "summary":"可用来生成所用文件的 MD5“签名”，以使网站避免上传不必要的内容。"
-        },
-        "es-AR":{
-            "title":"Herramienta de huellas digitales de archivos",
-            "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
-        },
-        "en-MY":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
-        },
-        "hi-IN":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"fingerprints\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
-        },
-        "en-PH":{
-            "title":"File Fingerprinting tool.",
-            "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
-        }
+    "zh-Hant-HK":{
+      "title":"檔案微縮工具。",
+      "summary":"可用來產生所用檔案的 MD5 \"署名檔\"，用以使網站避免上傳不必要的內容。"
+    },
+    "zh-Hant-TW":{
+      "title":"檔案辨識確認工具。",
+      "summary":"可用來產生檔案的 MD5 Checksum 檔案，以避免上傳了不必要的內容。"
+    },
+    "de":{
+      "title":"Dateiidentifizierungswerkzeug",
+      "summary":"Ermöglicht die Generierung von MD5-Signaturen für Ihre Dateien und eliminiert so das redundante Hochladen von Inhalten."
+    },
+    "fr":{
+      "title":"Outil descripteur de fichier (fingerprinting)",
+      "summary":"Génère des \"signatures MD5\" et les associe à vos fichiers, ce qui simplifie l'envoi de ces fichiers vers le serveur (upload)."
+    },
+    "hi":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"fingerprints\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
+    },
+    "da-DK":{
+      "title":"Redskab til filfingeraftryk.",
+      "summary":"Tillader at der genereres „MD5-signaturer“ af dine filer, som gør det muligt for websites at undgå unødvendig uploading af indhold."
+    },
+    "es-CL":{
+      "title":"Herramienta de huellas digitales de archivos",
+      "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
+    },
+    "it-IT":{
+      "title":"Strumento firme file",
+      "summary":"Permette di generare firme MD5 per i tuoi file e quindi evita ai siti di caricare contenuti non necessari."
+    },
+    "es-PE":{
+      "title":"Herramienta de huellas digitales de archivos",
+      "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
+    },
+    "en-GB":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unnecessary uploading of content."
+    },
+    "en-IN":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"fingerprints\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
+    },
+    "id-ID":{
+      "title":"File Fingerprinting tool",
+      "summary":"Memungkinkan dihasilkannya \"tanda tangan\" MD5 untuk file Anda sehingga situs dapat menghindari aktivitas upload konten yang tidak perlu."
+    },
+    "fr-CA":{
+      "title":"Outil descripteur de fichier (fingerprinting)",
+      "summary":"Génère des \"signatures MD5\" et les associe à vos fichiers, ce qui simplifie le téléchargement de vos fichiers vers le serveur."
+    },
+    "es":{
+      "title":"Herramienta de huellas digitales de archivos",
+      "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
+    },
+    "sv":{
+      "title":"Verktyg för filidentifiering.",
+      "summary":"Tillåter att ”MD5-signaturer” skapas av dina filer, vilket gör att webbplatser inte behöver överföra innehåll till din dator i onödan."
+    },
+    "zh":{
+      "title":"文件微缩工具。",
+      "summary":"可用来生成所用文件的 MD5“签名”，以使网站避免上传不必要的内容。"
+    },
+    "es-MX":{
+      "title":"Herramienta de huellas digitales de archivos",
+      "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
+    },
+    "ko":{
+      "title":"파일 지문 도구",
+      "summary":"파일의 MD5 \"서명\"이 생성되도록 하여 사이트에서 불필요한 컨텐트 업로딩을 피할 수 있게 합니다."
+    },
+    "pt":{
+      "title":"Ferramenta de verificação de arquivo.",
+      "summary":"Permite a criação das “assinaturas” MD5 de seus arquivos, fazendo com que os sites evitem fazer upload de conteúdo desnecessário."
+    },
+    "es-CO":{
+      "title":"Herramienta de huellas digitales de archivos",
+      "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
+    },
+    "nb-NO":{
+      "title":"Verktøy for filfingeravtrykk",
+      "summary":"Tillater generering av MD5-”signaturer” av filene dine, slik at nettsteder kan unngå unødvendig opplasting av innhold."
+    },
+    "id":{
+      "title":"File Fingerprinting tool",
+      "summary":"Memungkinkan dihasilkannya \"tanda tangan\" MD5 untuk file Anda sehingga situs dapat menghindari aktivitas upload konten yang tidak perlu."
+    },
+    "en-AU":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"fingerprints\" of your files to be generated, which enables sites to avoid unnecessary uploading of content."
+    },
+    "th-TH":{
+      "title":"เครื่องมือสร้างลายนิ้วมือไฟล์",
+      "summary":"สร้าง \"ลายเซ็น\" MD5 ของไฟล์ของคุณ ซึ่งช่วยไซต์ป้องกันการอัปโหลดเนื้อหาที่ไม่จำเป็น"
+    },
+    "en-US":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
+    },
+    "sv-SE":{
+      "title":"Verktyg för filidentifiering.",
+      "summary":"Tillåter att ”MD5-signaturer” skapas av dina filer, vilket gör att webbplatser inte behöver överföra innehåll till din dator i onödan."
+    },
+    "de-DE":{
+      "title":"Dateiidentifizierungswerkzeug",
+      "summary":"Ermöglicht die Generierung von MD5-Signaturen für Ihre Dateien und eliminiert so das redundante Hochladen von Inhalten."
+    },
+    "en-SG":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
+    },
+    "es-ES":{
+      "title":"Herramienta de huellas digitales de archivos",
+      "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
+    },
+    "fr-FR":{
+      "title":"Outil descripteur de fichier (fingerprinting)",
+      "summary":"Génère des \"signatures MD5\" et les associe à vos fichiers, ce qui simplifie l'envoi de ces fichiers vers le serveur (upload)."
+    },
+    "en-CA":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
+    },
+    "da":{
+      "title":"Redskab til filfingeraftryk.",
+      "summary":"Tillader at der genereres „MD5-signaturer“ af dine filer, som gør det muligt for websites at undgå unødvendig uploading af indhold."
+    },
+    "zh-Hans":{
+      "title":"文件微缩工具。",
+      "summary":"可用来生成所用文件的 MD5“签名”，以使网站避免上传不必要的内容。"
+    },
+    "pt-BR":{
+      "title":"Ferramenta de verificação de arquivo.",
+      "summary":"Permite a criação das “assinaturas” MD5 de seus arquivos, fazendo com que os sites evitem fazer upload de conteúdo desnecessário."
+    },
+    "vi-VN":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Cho phép tạo \"chữ ký\" MD5 của các tập tin, giúp tránh việc trang web phải tải nội dung không cần thiết."
+    },
+    "es-VE":{
+      "title":"Herramienta de huellas digitales de archivos",
+      "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
+    },
+    "vi":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Cho phép tạo \"chữ ký\" MD5 của các tập tin, giúp tránh việc trang web phải tải nội dung không cần thiết."
+    },
+    "zh-Hant":{
+      "title":"檔案辨識確認工具。",
+      "summary":"可用來產生檔案的 MD5 Checksum 檔案，以避免上傳了不必要的內容。"
+    },
+    "en":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
+    },
+    "nb":{
+      "title":"Verktøy for filfingeravtrykk",
+      "summary":"Tillater generering av MD5-”signaturer” av filene dine, slik at nettsteder kan unngå unødvendig opplasting av innhold."
+    },
+    "th":{
+      "title":"เครื่องมือสร้างลายนิ้วมือไฟล์",
+      "summary":"สร้าง \"ลายเซ็น\" MD5 ของไฟล์ของคุณ ซึ่งช่วยไซต์ป้องกันการอัปโหลดเนื้อหาที่ไม่จำเป็น"
+    },
+    "en-NZ":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unnecessary uploading of content."
+    },
+    "ko-KR":{
+      "title":"파일 지문 도구",
+      "summary":"파일의 MD5 \"서명\"이 생성되도록 하여 사이트에서 불필요한 컨텐트 업로딩을 피할 수 있게 합니다."
+    },
+    "zh-Hans-CN":{
+      "title":"文件微缩工具。",
+      "summary":"可用来生成所用文件的 MD5“签名”，以使网站避免上传不必要的内容。"
+    },
+    "es-AR":{
+      "title":"Herramienta de huellas digitales de archivos",
+      "summary":"Permite la creación de \"firmas\" MD5 de tus archivos, para evitar que los sitios web carguen contenido innecesario."
+    },
+    "en-MY":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
+    },
+    "hi-IN":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"fingerprints\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
+    },
+    "en-PH":{
+      "title":"File Fingerprinting tool.",
+      "summary":"Allows MD5 \"signatures\" of your files to be generated, which enables sites to avoid unneccesary uploading of content."
     }
+  }
 }
