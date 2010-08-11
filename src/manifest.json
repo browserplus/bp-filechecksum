@@ -1,6 +1,6 @@
 {
     "arguments":{
-        "ScriptFile":"@SCRIPT_FILE@"
+        "ScriptFile":"FileChecksum.rb"
     },
     "uses":{
         "version":"4",
