@@ -26,4 +26,36 @@ class TestFileChecksum < Test::Unit::TestCase
     #BrowserPlus.run(@service) { |s|
     #}
   end
+
+  # BrowserPlus.FileChecksum.md5({params}, function{}())
+  # Generate an md5 checksum of a file.
+  def test_file_checksum
+    # NEEDSWORK!!!  Need to figure out how to host RubyInterpreter to get these tests running
+    #BrowserPlus.run(@service) { |s|
+    #  # Real checksum.
+    #  Dir.glob(File.join(File.dirname(__FILE__), "cases", "*.json")).each do |f|
+    #    json = JSON.parse(File.read(f))
+    #    file = json["file"]
+    #    textfile_path = File.expand_path(File.join(@cwd, "test_files", file))
+    #    textfile_uri = "path://" + testfile_path
+    #    want = Digest::MD5.hexdigest(File.read(textfile_path))
+    #    got = s.md5({ "file" => textfile_uri }),
+    #    assert_equal(want, got)
+    #  end
+    #}
+  end
+
+  def test_file_checksum_filenotexist
+    # NEEDSWORK!!!  Need to figure out how to host RubyInterpreter to get these tests running
+    #BrowserPlus.run(@service) { |s|
+    #  # Fake checksum.
+    #  Dir.glob(File.join(File.dirname(__FILE__), "cases", "*.json")).each do |f|
+    #    json = JSON.parse(File.read(f))
+    #    file = json["file"] + (48 + rand(80)).chr
+    #    fakefile_path = File.expand_path(File.join(@cwd, "test_files", file))
+    #    fakefile_uri = "path://" fakefile_path
+    #    assert_raise(RuntimeError) { got = s.md5({ "file" => fakefile_uri }) }
+    #  end
+    #}
+  end
 end
