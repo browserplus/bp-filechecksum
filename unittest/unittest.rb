@@ -6,8 +6,8 @@ require 'uri'
 require 'test/unit'
 require 'open-uri'
 require 'rbconfig'
-require 'digest/md5'
 include Config
+require 'digest/md5'
 
 class TestFileChecksum < Test::Unit::TestCase
   def setup
@@ -28,8 +28,8 @@ class TestFileChecksum < Test::Unit::TestCase
     }
   end
 
-#  # BrowserPlus.FileChecksum.md5({params}, function{}())
-#  # Generate an md5 checksum of a file.
+  # BrowserPlus.FileChecksum.md5({params}, function{}())
+  # Generate an md5 checksum of a file.
 #  def test_file_checksum
 #    BrowserPlus.run(@service, @providerDir) { |s|
 #      # Real checksum.

@@ -23,8 +23,10 @@
 # A simple BrowserPlus service implemented in Ruby that will calculate the
 # MD5 sum of a file that a user has selected
 #
+
 require 'digest/md5'
-  
+require 'uri'
+
 class FileChecksumInstance
   # args contains 'url', 'data_dir', 'temp_dir'
   def initialize(args)
@@ -33,7 +35,6 @@ class FileChecksumInstance
   def md5(bp, args)
     begin
       bp.complete(Digest::MD5.hexdigest(File.open(args['file'].realpath, "rb") { |f| f.read }))
-      #bp.complete(Digest::MD5.hexdigest(File.open(args['file'].realpath, "rb") { |f| f.read }).to_s)
     rescue Exception => err
       bp_log("error", "[FileChecksum] ERROR : #{err.to_s}")
       bp.error("Error", err.to_s)
@@ -45,8 +46,8 @@ rubyCoreletDefinition = {
   'class' => "FileChecksumInstance",
   'name' => "FileChecksum",
   'major_version' => 1,
-  'minor_version' => 0,  
-  'micro_version' => 9,  
+  'minor_version' => 0,
+  'micro_version' => 9,
   'documentation' => 'Allows client side MD5 of user selected files.',
   'functions' =>
   [
@@ -65,3 +66,4 @@ rubyCoreletDefinition = {
     }
   ]
 }
+
