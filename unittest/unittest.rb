@@ -30,20 +30,20 @@ class TestFileChecksum < Test::Unit::TestCase
 
   # BrowserPlus.FileChecksum.md5({params}, function{}())
   # Generate an md5 checksum of a file.
-#  def test_file_checksum
-#    BrowserPlus.run(@service, @providerDir, nil, "/Users/garymd/test_file_checksum.txt") { |s|
-#      # Real checksum.
-#      Dir.glob(File.join(File.dirname(__FILE__), "cases", "*.json")).each do |f|
-#        json = JSON.parse(File.read(f))
-#        file = json["file"]
-#        textfile_path = File.expand_path(File.join(@cwd, "test_files", file))
-#        textfile_uri = "path:" + textfile_path
-#        want = Digest::MD5.hexdigest(File.read(textfile_path))
-#        got = s.md5({ "file" => textfile_uri }),
-#        assert_equal(want, got)
-#      end
-#    }
-#  end
+  def test_file_checksum
+    BrowserPlus.run(@service, @providerDir, nil, "/Users/garymd/test_file_checksum.txt") { |s|
+      # Real checksum.
+      Dir.glob(File.join(File.dirname(__FILE__), "cases", "*.json")).each do |f|
+        json = JSON.parse(File.read(f))
+        file = json["file"]
+        textfile_path = File.expand_path(File.join(@cwd, "test_files", file))
+        textfile_uri = "path:" + textfile_path
+        want = Digest::MD5.hexdigest(File.read(textfile_path))
+        got = s.md5({ "file" => textfile_uri })
+        assert_equal(want, got)
+      end
+    }
+  end
 
   def test_file_checksum_filenotexist
     BrowserPlus.run(@service, @providerDir) { |s|
