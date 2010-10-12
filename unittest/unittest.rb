@@ -31,7 +31,7 @@ class TestFileChecksum < Test::Unit::TestCase
   # BrowserPlus.FileChecksum.md5({params}, function{}())
   # Generate an md5 checksum of a file.
 #  def test_file_checksum
-#    BrowserPlus.run(@service, @providerDir, nil, "/Users/garymd/test_file_checksum.txt") { |s|
+#    BrowserPlus.run(@service, @providerDir) { |s|
 #      # Real checksum.
 #      Dir.glob(File.join(File.dirname(__FILE__), "cases", "*.json")).each do |f|
 #        json = JSON.parse(File.read(f))
