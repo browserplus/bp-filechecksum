@@ -24,8 +24,8 @@ class TestFileChecksum < Test::Unit::TestCase
   end
 
   def test_load_service
-#    BrowserPlus.run(@service, @providerDir) { |s|
-#    }
+    BrowserPlus.run(@service, @providerDir) { |s|
+    }
   end
 
   # BrowserPlus.FileChecksum.md5({params}, function{}())
