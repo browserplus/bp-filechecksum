@@ -38,11 +38,13 @@ class TestFileChecksum < Test::Unit::TestCase
         file = json["file"]
         textfile_path = File.expand_path(File.join(@cwd, "test_files", file))
         textfile_uri = "path:" + textfile_path
-        want = Digest::MD5.hexdigest(File.read(textfile_path))
-        got = s.md5({ "file" => textfile_uri })
-        # NEEDSWORK!!!  The ruby MD5 function does not behave correctly on
-	# Windows??  Need to investigate and re-enable
-        #assert_equal(want, got)
+        # Need to open as binary because Ruby on Windows will
+        # normalize line endings otherwise, leading to incorrect MD5.
+        File.open(textfile_path, "rb") { |f|
+          want = Digest::MD5.hexdigest(f.read)
+          got = s.md5({ "file" => textfile_uri })
+          assert_equal(want, got)
+        }
       end
     }
   end
@@ -55,9 +57,7 @@ class TestFileChecksum < Test::Unit::TestCase
         file = json["file"] + (48 + rand(80)).chr
         fakefile_path = File.expand_path(File.join(@cwd, "test_files", file))
         fakefile_uri = "path:" + fakefile_path
-        # NEEDSWORK!!!  This exception is not always being raised on
-	# Windows??  Need to investigate and re-enable
-        #assert_raise(RuntimeError) { got = s.md5({ "file" => fakefile_uri }) }
+        assert_raise(RuntimeError) { got = s.md5({ "file" => fakefile_uri }) }
       end
     }
   end
