@@ -54,7 +54,7 @@ class TestFileChecksum < Test::Unit::TestCase
       # Fake checksum.
       Dir.glob(File.join(File.dirname(__FILE__), "cases", "*.json")).each do |f|
         json = JSON.parse(File.read(f))
-        file = json["file"] + (48 + rand(80)).chr
+        file = json["file"] + rand(100).to_s
         fakefile_path = File.expand_path(File.join(@cwd, "test_files", file))
         fakefile_uri = "path:" + fakefile_path
         assert_raise(RuntimeError) { got = s.md5({ "file" => fakefile_uri }) }
